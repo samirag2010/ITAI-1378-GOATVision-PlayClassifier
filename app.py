@@ -213,3 +213,36 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload a soccer image to get a prediction.")
+
+import cv2
+import tempfile
+
+st.markdown("### 🎥 Upload a video (experimental)")
+
+video_file = st.file_uploader("Upload a soccer video", type=["mp4", "mov"])
+
+if video_file is not None:
+    tfile = tempfile.NamedTemporaryFile(delete=False)
+    tfile.write(video_file.read())
+
+    cap = cv2.VideoCapture(tfile.name)
+    success, frame = cap.read()
+
+    if success:
+        st.image(frame, caption="Extracted Frame", use_container_width=True)
+
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        pil_image = Image.fromarray(frame)
+
+        input_tensor = transform(pil_image).unsqueeze(0).to(device)
+
+        with torch.no_grad():
+            outputs = model(input_tensor)
+            probabilities = torch.softmax(outputs, dim=1)[0]
+            predicted_index = torch.argmax(probabilities).item()
+
+        label = CLASS_NAMES[predicted_index].replace("_", " ").title()
+        confidence = probabilities[predicted_index].item()
+
+        st.markdown(f"## 🎬 Video Prediction: **{label}**")
+        st.write(f"Confidence: {confidence:.2%}")

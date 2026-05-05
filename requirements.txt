@@ -8,3 +8,4 @@ Pillow
 grad-cam
 Streamlit
 gdown
+opencv-python

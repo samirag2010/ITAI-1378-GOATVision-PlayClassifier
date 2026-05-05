@@ -5,6 +5,8 @@ from PIL import Image
 import torch
 import torch.nn as nn
 from torchvision import transforms, models
+import cv2
+import tempfile
 
 # -----------------------------
 # Page setup
@@ -213,9 +215,6 @@ if uploaded_file is not None:
 
 else:
     st.info("Upload a soccer image to get a prediction.")
-
-import cv2
-import tempfile
 
 st.markdown("### 🎥 Upload a video (experimental)")
 

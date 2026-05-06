@@ -200,7 +200,11 @@ implementing object detection to localize players and referees
 
 building a real-time match event detection system
 
+## 🎥 Demo Video
 
+Watch the full project demonstration here:
+
+https://youtu.be/KCoNR_yaisQ
 
 
 

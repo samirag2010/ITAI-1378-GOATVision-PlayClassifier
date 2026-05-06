@@ -6,6 +6,6 @@ scikit-learn
 tqdm
 Pillow
 grad-cam
-Streamlit
+streamlit
 gdown
 opencv-python-headless

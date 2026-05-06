@@ -4,10 +4,10 @@ https://goatvision-soccer.streamlit.app
 ## 📸 Demo
 
 ### Interface
-![Interface](docs/DEMO_GV_Interface.png)
+![Interface](results/DEMO_GV_Interface.png)
 
 ### Prediction
-![Prediction](docs/DEMO_GV_Prediction.png)
+![Prediction](results/DEMO_GV_Prediction.png)
 
 ITAI-1378 Midterm – G.O.A.T Vision: Game Outcome Action Tracker
 Project Name

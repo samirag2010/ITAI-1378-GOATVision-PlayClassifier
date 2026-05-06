@@ -6,7 +6,7 @@ Classes:
 - corner_kick
 - free_kick
 - penalty_kick
-- shot
+- shot_on_goal
 - yellow_card
 
 Due to repository size limits, the full dataset is not stored in this GitHub repository.

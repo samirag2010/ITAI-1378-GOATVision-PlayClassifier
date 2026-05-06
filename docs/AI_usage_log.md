@@ -138,3 +138,7 @@ Finalized folders including:
 - src/
 
 Prepared project for final submission and portfolio use.
+
+## Reflection
+
+AI-assisted tools were used to support learning, debugging, documentation, and development throughout the project. Final implementation decisions, dataset preparation, testing, and project integration were completed by the student.

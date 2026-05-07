@@ -202,10 +202,7 @@ building a real-time match event detection system
 
 ## 🎥 Demo Video
 
-Watch the full project demonstration here:
-
-https://youtu.be/KCoNR_yaisQ
-
+[![Watch Demo](docs/demo.png)](https://youtu.be/KCoNR_yaisQ)
 
 
 
